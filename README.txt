@@ -10,7 +10,9 @@
 #####################################################################
 
 
-This directory can be used to replicate the experiments on xpmp shown in the paper: "" 
+This repository can be used to replicate the experiments on xpmp shown in the paper: "" 
+The repository is meant to be a subdirectory of the project: " " 
+
 
 The list of the supported benchmarks that can be executed in simulation is in the text file: 
 #cat ./input_exp/bench_list.txt
