@@ -1,0 +1,528 @@
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Small -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_static -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Medium_dynamic -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=no -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=tab -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/app.o src/app.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from src
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/main.o src/main.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/demo_system.o lib/demo_system.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/gpio.o lib/gpio.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/grt.o lib/grt.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pmp.o lib/pmp.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/pwm.o lib/pwm.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/spi.o lib/spi.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/timer.o lib/timer.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from libs
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/uart.o lib/uart.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from bench
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/matrix1.o bench/matrix1/matrix1.c -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[OBJ]	Creating OBJs from crt0.s
+/opt/rv32/bin/riscv32-unknown-elf-gcc  -o obj/crt0.o src/crt0.s -Iinc -includematrix1.h -Ibench/matrix1/ -DBENCHNAME=matrix1 -DPMR=grt -DPLATFORM=Large -march=rv32im_zicsr_zifencei -O0 -c
+
+[ELF]	Creating elf file
+/opt/rv32/bin/riscv32-unknown-elf-ld -o bin/xpmp_test.elf obj/app.o obj/main.o obj/demo_system.o obj/gpio.o obj/grt.o obj/pmp.o obj/pwm.o obj/spi.o obj/timer.o obj/uart.o obj/matrix1.o obj/crt0.o -Tld/DEMOSYSTEM_FLASH.ld --nostdlib 
+
+[ELF]	Creating bin file
+/opt/rv32/bin/riscv32-unknown-elf-objcopy -O binary bin/xpmp_test.elf bin/xpmp_test.bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'

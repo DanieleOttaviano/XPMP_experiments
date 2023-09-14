@@ -1,0 +1,48 @@
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+make: Entering directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
+rm -rf 					 obj
+rm -rf 					 bin
+make: Leaving directory '/home/parallels/Desktop/RISC-V_experiments/platform/XPMP_experiments/code'
