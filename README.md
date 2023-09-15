@@ -74,7 +74,7 @@ BENCH =['adpcm_dec', 'adpcm_enc', 'anagram', 'binarysearch',
 
 ## Supported Benchmarks
 
-The list of the supported benchmarks:
+The list of the supported benchmarks are a subset of the [TACLEbench](https://github.com/tacle/tacle-bench.git) benchmarks:
 
 ```
 adpcm_dec      
