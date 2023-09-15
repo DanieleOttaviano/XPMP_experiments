@@ -169,7 +169,7 @@ for platform, max_values in max_time.items():
     min_values = min_time[platform]
     overall_max_time = max(max_values)
     overall_min_time = min(min_values)
-    print(f"Platform: {platform}\n Overall Max Time: {overall_max_time}\n Overall Min Time: {overall_min_time}")
+    print(f"Platform: {platform}\n Overall Max Overhead: {overall_max_time}\n Overall Min Overhead: {overall_min_time}")
 
 # Add a legend
 fig.legend(legend_labels, loc='upper right')
