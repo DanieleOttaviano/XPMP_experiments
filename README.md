@@ -20,7 +20,7 @@
 ****
 
 
-### This repository is designed for replicating the experiments on XPMP as shown in the associated paper: [Link to the Paper](https://your-paper-url.com)
+### This repository aims is to replicate the experiments on XPMP as shown in the associated paper: [Link to the Paper](https://your-paper-url.com)
 
 ## How to Use
 
