@@ -1,6 +1,7 @@
 # XPMP Experiments Repository 
 
-**This repository aims is to replicate the experiments on XPMP as shown in the associated paper: [Link to the Paper](https://your-paper-url.com)**
+**This repository aims is to replicate the experiments on XPMP as shown in the associated paper: [Lightweight and predictable virtual memory on
+modern microcontrollers](https://your-paper-url.com)**
 
 > **Engineers:** 
 > > Daniele Ottaviano ([daniele.ottaviano@unina.it](mailto:daniele.ottaviano@unina.it)) 
