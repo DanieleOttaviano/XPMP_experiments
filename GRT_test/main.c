@@ -39,7 +39,7 @@ int main() {
             printf("BANK 1\n");
         }
 
-        printf("%d:\t%08x\t[%08x]\n",i,rpm[i],(rpm+i));
+        printf("%d:\t%08x\t[%p]\n",i,rpm[i],(rpm+i));
     }
  
     deleteTree();

@@ -230,7 +230,7 @@ static void nlvlFill(){
     struct grt_node* temp_node = root;   
     uint32_t h = height(root) + 1;                    //plus 1 for the limit table
     nlvl = (uint32_t*)malloc(h * sizeof(uint32_t));   //Number of elements for level
-    for(int i=0; i<h; i++){
+    for(uint32_t i=0; i<h; i++){
         nlvl[i]=0;
     }
 
@@ -262,20 +262,20 @@ static void writeBanks(uint32_t* rpm, uint32_t* rpm_index, grt_node* node,
     // find NPTR
    if(node->hint == 3){                             //The node has two children
         current_level = node->level;
-        for(int i = 1; i <= current_level; i++){    //Start from 1 beacuse root node is not in the rpm
+        for(uint32_t i = 1; i <= current_level; i++){    //Start from 1 beacuse root node is not in the rpm
             next_addr_start = next_addr_start + nlvl[i];
         } 
         nptr = next_addr_start + current_addr_off[current_level];  
         current_addr_off[current_level] = current_addr_off[current_level] + 2;
     } 
     else if(node->limit){                           // node points to the limit table
-        for(int i = 1; i < h-1; i++){               // next level start = limit table
+        for(uint32_t i = 1; i < h-1; i++){               // next level start = limit table
            next_addr_start = next_addr_start + nlvl[i];
         }  
         nptr = next_addr_start + current_addr_off[h-1];
         current_addr_off[h-1]= current_addr_off[h-1] + node->hint;
         //write limit table 
-        for(int i = 0;i < node->hint; i++){            //all limit tables
+        for(uint32_t i = 0;i < node->hint; i++){            //all limit tables
             bank0[nptr] = ((node->limit_table->reloc_off)<<REL_OFF_SHIFT) | node->limit_table->perm;
             bank1[nptr] = node->limit_table->reloc_off;
         }
@@ -306,7 +306,7 @@ int writeRPM(uint32_t * rpm){
     uint32_t h = height(root) + 1;  // plus 1 for the limit tables
     uint32_t* current_addr_off = (uint32_t*) malloc(h*sizeof(uint32_t)); 
 
-    for(int i = 0; i < h; i++){
+    for(uint32_t i = 0; i < h; i++){
         current_addr_off[i] = 0;
     }
 
@@ -397,6 +397,7 @@ int setAddrCfg(const uint32_t value, const uint32_t reloc_off,
         node->valid = 1;
         node->hint++;
     }
+    return 0;
 }
 
 // Create the default grt structure
