@@ -2,7 +2,8 @@
 
 script_dir=$(dirname -- "$( readlink -f -- "$0"; )";)
 date_exp_dir=$(dirname "$script_dir")
-project_dir=$(dirname "$date_exp_dir")
+code_dir=$(dirname "$date_exp_dir")
+project_dir=$(dirname "$code_dir")
 
 PLATFORM_vector=("Small" "Medium_static" "Medium_dynamic" "Large")
 PMR_vector=("no" "tab" "grt")
