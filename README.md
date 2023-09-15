@@ -1,7 +1,6 @@
 # XPMP Experiments Repository 
 
-
-****
+**This repository aims is to replicate the experiments on XPMP as shown in the associated paper: [Link to the Paper](https://your-paper-url.com)**
 
 > **Engineers:** 
 > > Daniele Ottaviano ([daniele.ottaviano@unina.it](mailto:daniele.ottaviano@unina.it)) 
@@ -12,15 +11,9 @@
 >
 >  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Napoli_university_logo.svg" alt="University Logo" width="50"/>
 
-****
-
 > [!WARNING]
 > This repository is intended to be a subdirectory of the project [Granp4sso/cv32e41s\_SoC\_env](https://github.com/Granp4sso/cv32e41s_SoC_env).
 
-****
-
-
-**This repository aims is to replicate the experiments on XPMP as shown in the associated paper: [Link to the Paper](https://your-paper-url.com)**
 
 ## How to Use
 
