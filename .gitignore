@@ -1,3 +1,4 @@
 output_exp/*
 code/bin/*
 GRT_test/*.o
+GRT_test/main
